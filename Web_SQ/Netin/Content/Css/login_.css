@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #dee5ec url(../images/body_bg.jpg) repeat-x top;
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+.blank {
+    width: 1000px;
+    height: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, li, ol, img, fieldest, p, div, form {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 1000px;
+    height:600px;
+    margin: 0 auto;
+    background: url(../images/computer_login.jpg) no-repeat 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+form {
+    width: 1000px;
+    height: 500px;
+    margin: auto 0;
+    background: url(../images/login_form.png) no-repeat;
+    position: absolute;
+    top: 60px;
+}
+
+.input-username {
+    width: 180px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 226px;
+    left: 422px;
+    border: none;
+    background: none;
+}
+
+.input-password {
+    width: 180px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 276px;
+    left: 422px;
+    border: none;
+    background: none;
+}
+
+.input-checkcode {
+    width: 102px;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    top: 326px;
+    left: 398px;
+    border: none;
+    background: none;
+}
+
+.span-checkcode {
+    position: absolute;
+    left: 522px;
+    top: 330px;
+}
+
+.submit {
+    width: 94px;
+    height: 33px;
+    display: block;
+    position: absolute;
+    top: 372px;
+    left: 394px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.corpyRight {
+    color: #3c4a55;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 560px;
+    left: 312px;
+}
+
+    .corpyRight a {
+        color: #ff6401;
+    }

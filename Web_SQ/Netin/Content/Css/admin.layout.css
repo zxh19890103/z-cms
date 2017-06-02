@@ -1,0 +1,333 @@
+﻿@charset "utf-8";
+/*common begin*/
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #f6f6f6;
+    font-family: arial,verdana,helvetica,sans-serif;
+}
+
+a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+    a:link, a:visited {
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        color: #FF771F;
+        text-decoration: underline;
+    }
+
+fieldset {
+    border: 1px solid #abadb3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 4px inherit;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+    fieldset legend {
+    }
+
+textarea {
+    width: 392px;
+    height: 92px;
+    line-height: 22px;
+    border: 1px solid #bababa;
+    background: #fff;
+    font-family: "宋体";
+    font-size: 12px;
+    color: #545454;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+/*common end*/
+
+/*layout begin*/
+.layout-top {
+    width: 100%;
+    height: 88px;
+}
+
+.layout-body {
+    width: 100%;
+    display: inline-block;
+    height: 800px;
+}
+
+.layout-menu {
+    width: 15%;
+    float: left;
+    height: 800px;
+}
+
+.layout-content {
+    width: 84.5%;
+    float: left;
+    height: 800px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.layout-middle-bar {
+    float: left;
+    background: url(../images/hide_bg.jpg) repeat-y;
+    width: 0.5%;
+    position: relative;
+    height: 800px;
+}
+
+    .layout-middle-bar img {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+    }
+
+#show-btn {
+    display: none;
+}
+
+.nt-mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20000;
+    background-color: #000000;
+    filter: alpha(opacity=0); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.0; /*Firefox私有，透明度50%*/
+    opacity: 0.0; /*其他，透明度50%*/
+}
+
+.nt-loading {
+    display: none;
+    position: fixed;
+    z-index: 20001;
+    top: 200px;
+    left: 48%;
+    width: 100px;
+    height: 100px;
+}
+/*layout end*/
+.admin-button {
+    cursor: pointer;
+    width: 64px;
+    height: 26px;
+    font-size: 12px;
+    font-family: "宋体";
+    text-align: center;
+    line-height: 26px;
+    display: inline-block;
+    background: url(../images/normal.jpg) no-repeat;
+    color: #555555;
+}
+
+    .admin-button:hover {
+        background: url(../images/hover.jpg) no-repeat;
+    }
+
+/*nt alert*/
+#nt-alert-box {
+    border-collapse: collapse;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    z-index: 20002;
+    display: none;
+    width: 200px;
+    height: 120px;
+}
+
+    #nt-alert-box * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    #nt-alert-box .top {
+        height: 34px;
+    }
+
+        #nt-alert-box .top .top-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left_top.png) no-repeat;
+        }
+
+        #nt-alert-box .top .nt-alert-box-title {
+            background: url(../images/dialog.icon/aui_top.png) repeat-x;
+            font-family: "微软雅黑";
+            line-height: 34px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #nt-alert-box .top .top-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right_top.png) no-repeat;
+        }
+
+    #nt-alert-box .body {
+        min-height: 80px;
+    }
+
+        #nt-alert-box .body .body-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left.png) repeat-y;
+        }
+
+        #nt-alert-box .body .body-middle {
+            min-width: 120px;
+            background-color: #fff;
+        }
+
+            #nt-alert-box .body .body-middle .nt-alert-content {
+                font-size: 12px;
+                text-align: center;
+                color: #545454;
+                height: 40px;
+                margin-top: 10px;
+            }
+
+            #nt-alert-box .body .body-middle .nt-alert-button {
+                text-align: center;
+            }
+
+        #nt-alert-box .body .body-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right.png) repeat-y;
+        }
+
+    #nt-alert-box .foot {
+        height: 14px;
+    }
+
+        #nt-alert-box .foot .foot-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left_bottom.png) no-repeat;
+        }
+
+        #nt-alert-box .foot .nt-alert-box-foot {
+            background: url(../images/dialog.icon/aui_bottom.png) repeat-x;
+        }
+
+        #nt-alert-box .foot .foot-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right_bottom.png) no-repeat;
+        }
+
+/*nt confirm*/
+#nt-confirm-box {
+    border-collapse: collapse;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    z-index: 20002;
+    display: none;
+    width: 200px;
+    height: 120px;
+}
+
+    #nt-confirm-box * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    #nt-confirm-box .top {
+        height: 34px;
+    }
+
+        #nt-confirm-box .top .top-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left_top.png) no-repeat;
+        }
+
+        #nt-confirm-box .top .nt-confirm-box-title {
+            background: url(../images/dialog.icon/aui_top.png) repeat-x;
+            font-family: "微软雅黑";
+            line-height: 34px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #nt-confirm-box .top .top-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right_top.png) no-repeat;
+        }
+
+    #nt-confirm-box .body {
+        min-height: 80px;
+    }
+
+        #nt-confirm-box .body .body-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left.png) repeat-y;
+        }
+
+        #nt-confirm-box .body .body-middle {
+            min-width: 120px;
+            background-color: #fff;
+        }
+
+            #nt-confirm-box .body .body-middle .nt-confirm-content {
+                font-size: 12px;
+                text-align: center;
+                color: #545454;
+                height: 40px;
+                margin-top: 10px;
+            }
+
+            #nt-confirm-box .body .body-middle .nt-confirm-button {
+                text-align: center;
+                margin-top: 6px;
+            }
+
+        #nt-confirm-box .body .body-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right.png) repeat-y;
+        }
+
+    #nt-confirm-box .foot {
+        height: 14px;
+    }
+
+        #nt-confirm-box .foot .foot-left {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_left_bottom.png) no-repeat;
+        }
+
+        #nt-confirm-box .foot .nt-confirm-box-foot {
+            background: url(../images/dialog.icon/aui_bottom.png) repeat-x;
+        }
+
+        #nt-confirm-box .foot .foot-right {
+            width: 14px;
+            background: url(../images/dialog.icon/aui_right_bottom.png) no-repeat;
+        }

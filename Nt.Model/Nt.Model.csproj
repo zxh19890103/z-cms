@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCB94FDC-5C57-4062-B444-AAC79054DE89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nt.Model</RootNamespace>
+    <AssemblyName>Nt.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseLocaleModel.cs" />
+    <Compile Include="BaseTreeModel.cs" />
+    <Compile Include="BaseViewModel.cs" />
+    <Compile Include="Enum\ResumeEduDegree.cs" />
+    <Compile Include="Enum\ResumeMarritalStatus.cs" />
+    <Compile Include="Enum\MessageStatus.cs" />
+    <Compile Include="Enum\OrderStatus.cs" />
+    <Compile Include="Enum\ResumeStatus.cs" />
+    <Compile Include="ILocaleModel.cs" />
+    <Compile Include="Nt_Banner.cs" />
+    <Compile Include="Nt_Book.cs" />
+    <Compile Include="Nt_BookReply.cs" />
+    <Compile Include="Nt_Content.cs" />
+    <Compile Include="Nt_Course.cs" />
+    <Compile Include="Nt_CourseCategory.cs" />
+    <Compile Include="Nt_Email.cs" />
+    <Compile Include="Nt_EmailAccount.cs" />
+    <Compile Include="Nt_JavaScript.cs" />
+    <Compile Include="Nt_Job.cs" />
+    <Compile Include="Nt_Language.cs" />
+    <Compile Include="Nt_Link.cs" />
+    <Compile Include="Nt_Log.cs" />
+    <Compile Include="Nt_Member.cs" />
+    <Compile Include="Nt_MemberRole.cs" />
+    <Compile Include="Nt_Message.cs" />
+    <Compile Include="Nt_MessageReply.cs" />
+    <Compile Include="Nt_Mobile_Navigation.cs" />
+    <Compile Include="Nt_Navigation.cs" />
+    <Compile Include="Nt_News.cs" />
+    <Compile Include="Nt_NewsCategory.cs" />
+    <Compile Include="Nt_Order.cs" />
+    <Compile Include="Nt_Permission.cs" />
+    <Compile Include="Nt_Picture.cs" />
+    <Compile Include="Nt_Product.cs" />
+    <Compile Include="Nt_ProductCategory.cs" />
+    <Compile Include="Nt_ProductField.cs" />
+    <Compile Include="Nt_ProductFieldValue.cs" />
+    <Compile Include="Nt_Resume.cs" />
+    <Compile Include="Nt_SearchKeyWord.cs" />
+    <Compile Include="Nt_SinglePage.cs" />
+    <Compile Include="Nt_SpecialPage.cs" />
+    <Compile Include="Nt_User.cs" />
+    <Compile Include="Nt_UserLevel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingModel\MessageAdminNotice.cs" />
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="SettingModel\BaseSettingModel.cs" />
+    <Compile Include="SettingModel\BookAdminNotice.cs" />
+    <Compile Include="SettingModel\BookSettings.cs" />
+    <Compile Include="SettingModel\EmailSettings.cs" />
+    <Compile Include="SettingModel\ISettingModel.cs" />
+    <Compile Include="SettingModel\JobSettings.cs" />
+    <Compile Include="SettingModel\MemberSettings.cs" />
+    <Compile Include="SettingModel\MessageSettings.cs" />
+    <Compile Include="SettingModel\NewsSettings.cs" />
+    <Compile Include="SettingModel\OrderSettings.cs" />
+    <Compile Include="SettingModel\ProductSettings.cs" />
+    <Compile Include="SettingModel\RegisterDeclaration.cs" />
+    <Compile Include="SettingModel\WebsiteInfoSettings.cs" />
+    <Compile Include="SettingModel\WebsiteLinkItem.cs" />
+    <Compile Include="Common\SimpleCatalog.cs" />
+    <Compile Include="View\IView.cs" />
+    <Compile Include="View\View_Banner.cs" />
+    <Compile Include="View\View_Content.cs" />
+    <Compile Include="View\View_Course.cs" />
+    <Compile Include="View\View_Link.cs" />
+    <Compile Include="View\View_Member.cs" />
+    <Compile Include="View\View_News.cs" />
+    <Compile Include="View\View_Product.cs" />
+    <Compile Include="View\View_ProductField.cs" />
+    <Compile Include="View\View_User.cs" />
+    <Compile Include="View\View_UserPermission.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

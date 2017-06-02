@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/*common begin*/
+* { border: 0; margin: 0; padding: 0; }
+li { list-style-type: none; }
+img { border: 0; }
+body { background: #f6f6f6; font-family:arial,verdana,helvetica,sans-serif }
+a { color: #000; font-size: 12px; text-decoration: none; }
+    a:link, a:visited { text-decoration: none; }
+    a:hover, a:active { color: #FF771F; text-decoration: underline; }
+fieldset { border: 1px solid #abadb3; margin-top: 5px; margin-bottom: 10px; width: 90%; padding: 4px inherit; padding-left: 10px; text-align: left; font-size: 12px; }
+    fieldset legend { }
+textarea { width: 392px; height: 92px; line-height: 22px; border: 1px solid #bababa; background: #fff; font-family: "宋体"; font-size: 12px; color: #545454; }
+.fl { float: left; }
+.fr { float: right; }
+/*common end*/
+
+/*header begin*/
+.head { width: 100%; height: 88px; background: url(../images/head_bg.jpg) repeat-x; }
+.logo { padding-left: 50px; }
+.visiter { font-family: "宋体"; font-size: 12px; color: #d68c5a; padding-top: 30px; }
+    .visiter span { padding: 3px 0; padding-left: 18px; color: #d68c5a; line-height: 15px; }
+.nt-language-selector select { font-family: "宋体"; font-size: 12px; background: #fff; border: 1px solid #e3e9ef; }
+/*header end*/

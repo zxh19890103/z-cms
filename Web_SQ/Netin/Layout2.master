@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Layout2.master.cs" Inherits="Admin_Layout2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%=PageTitle %></title>
+    <link href="/Netin/Content/Css/admin.common.css" rel="stylesheet" />
+    <link href="/Netin/Content/Css/fileuploader.css" rel="stylesheet" />
+    <script src="/Netin/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/Netin/Scripts/jquery.form.js" type="text/javascript"></script>
+    <script src="/Netin/Scripts/admin.common.js" type="text/javascript"></script>
+    <script src="/Netin/Scripts/admin.main.js" type="text/javascript"></script>
+    <script src="/Netin/Scripts/admin.list.func.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="CPH_Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <asp:ContentPlaceHolder ID="CPH_Body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div runat="server" id="ScriptArea"></div>
+</body>
+</html>
